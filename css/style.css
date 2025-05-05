@@ -181,8 +181,20 @@ i:hover{
 
 @media (max-width: 600px){
     header{
-        font-size: 1.2em;
-        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+
+    .titulo{
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    .logo{
+        height: 60px;
     }
 
     nav ul{
