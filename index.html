@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web | Parcial 2 de DPW</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Iconos -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <h1>Bienvenidos a mi Sitio Web</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/tem/contactos.html">Contáctanos</a></li>
+            <li><a href="/tem/galeria.html">Galería de Imágenes</a></li>
+            <li><a href="/tem/promociones.html">Promociones</a></li>
+            <li><a href="/tem/nuestraEmpresa.html">Nuestra Empresa</a> </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>Formulario de registro</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre completo:</label></td>
+                    <td><input type="text" id="nombre" name="nombre" autofocus placeholder="Ej. Juan Perez" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Correo electronico:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Ej. juan.perez@ejemplo.com" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="contrasena">Contraseña:</label></td>
+                    <td><input type="password" id="contrasena" name="contrasena" placeholder="Ej. Ds21a2020$" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^\w\s]).{10,}$" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="telefono">Telefono:</label></td>
+                    <td><input type="tel" id="telefono" name="telefono" placeholder="7845-1258" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="pais">Pais:</label></td>
+                    <td>
+                        <select name="pais" id="pais" required>
+                            <option value="">Selecciona tu pais</option>
+                            <option value="sv">El Salvador</option>
+                            <option value="gt">Guatemala</option>
+                            <option value="hs">Honduras</option>
+                            <option value="mx">Mexico</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Enviar formulario</button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>Derechos reservados &copy; 2023 - RADIO VLAD</p>
+        <div class="redes">            
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-twitter'></i>    
+                <i class='bx bxl-instagram-alt'></i>    
+                <i class='bx bxs-envelope' ></i>
+                <i class='bx bxl-youtube'></i>
+        </div>
+        <br>
+        <p>Siguenos en nuestras redes sociales</p>
+    </footer>
+
+</body>
+</html>
