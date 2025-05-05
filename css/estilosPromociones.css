@@ -27,7 +27,6 @@ header{
     align-items: center;
     height: 100px;
     font-size: 1em;
-    pointer-events: none;
 }
 
 .logo{
