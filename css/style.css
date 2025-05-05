@@ -98,7 +98,7 @@ td{
 input, select{
     width: 100%;
     padding: 9px;
-    border-radius: 20px;
+    border-radius: 4px 6px;
     border: 1px solid #000000;
 }
 
