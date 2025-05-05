@@ -19,13 +19,14 @@ body{
 
 header{
     position: relative;
-    background-color: #4caf50;
+    background-color: rgb(41, 61, 55);
     color: #ffffff;
     padding: 20px;
     display: flex;
     align-items: center;
     height: 100px;
     font-size: 1em;
+    pointer-events: none;
 }
 
 .logo{
@@ -90,7 +91,14 @@ main{
     padding: 40px 20px;
 }
 
-.historia, .mision-vision, .valores{
+.contenedor img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.historia, .mision-vision, .valores, .empresa{
     background-color: #FFFFFF;
     border-radius: 30px;
     box-shadow: 8px 6px 10px rgba(0, 0, 0, 255);
@@ -98,23 +106,23 @@ main{
     max-width: 350px;
     width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
 }
 
-.historia:hover, .mision-vision:hover, .valores:hover{
+.historia:hover, .mision-vision:hover, .valores:hover, .empresa:hover{
     transform: translateY(-5px);
     box-shadow: 8px 10px 19px rgba(31, 255, 2, 0.941);
 }
 
-.historia h2, .mision-vision h2, .valores h2{
+.historia h2, .mision-vision h2, .valores h2, .empresa h2{
     color: #4caf50;
     margin-top: 0;
     font-size: 1.6;
 }
 
-.historia p, .mision-vision p, .valores p{
+.historia p, .mision-vision p, .valores p, .empresa p{
     font-size: 1rem;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .valores ul{
@@ -193,7 +201,7 @@ i:hover{
         gap: 20px;
     }
 
-    .promocion, .historia, .mision-vision, .valores{
+    .promocion, .historia, .mision-vision, .valores, .empresa{
         max-width: 90%;
     }
 
